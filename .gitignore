@@ -1,5 +1,7 @@
 *.iml
 .gradle
+.idea
+/.idea
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
@@ -7,3 +9,10 @@
 /build
 /captures
 .externalNativeBuild
+libs/
+src/main/assets/
+src/main/java/com/softuvo/ipundit/adapter/
+src/main/java/com/softuvo/ipundit/api/
+src/main/java/com/softuvo/ipundit/dtos/
+src/main/java/com/softuvo/ipundit/fragments/
+src/main/res/drawable/

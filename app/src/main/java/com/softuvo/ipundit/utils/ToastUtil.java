@@ -5,5 +5,5 @@ package com.softuvo.ipundit.utils;
  */
 
 public class ToastUtil {
-    
+
 }
