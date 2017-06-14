@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    ================================================================================================
+    Common For App
+    ================================================================================================
+    -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_small_large">8dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_xlarge">16dp</dimen>
+
+    <dimen name="breaking_news_height">30dp</dimen>
+    <dimen name="text_size_small">11dp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+    <dimen name="text_size_large">20dp</dimen>
+
+
+    <!--
+    ================================================================================================
+    Login Activity
+    ================================================================================================
+    -->
+    <dimen name="edit_username_margintop">8dp</dimen>
+
+</resources>

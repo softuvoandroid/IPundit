@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">IPundit</string>
+    <string name="breaking_news_heading_text">BREAKING NEWS</string>
+    <string name="app_logo_string">App Logo</string>
+    <string name="broadcast_text">Broadcast</string>
+    <string name="listen_text">Listen</string>
+    <string name="settings_text">Settings</string>
+    <string name="about_pundit_text">About Pundit</string>
+    <string name="profile_text">Profile</string>
+    <string name="fb_login_text">Log In</string>
+    <string name="fb_logout_text">Log Out</string>
+
+
 </resources>

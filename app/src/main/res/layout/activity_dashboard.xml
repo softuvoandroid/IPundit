@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_logo_string"
+            android:src="@drawable/app_logo"
+            android:padding="@dimen/margin_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/breaking_news_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlack"
+            android:orientation="horizontal">
+
+            <com.softuvo.ipundit.views.CustomTextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorBreakingNewsHeader"
+                android:gravity="end|center_vertical"
+                android:padding="2dp"
+                android:text="@string/breaking_news_heading_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.softuvo.ipundit.views.CustomTextView
+                android:id="@+id/tv_breaking_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="end|center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/rl_broadcast_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/red_tile" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_listen_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:paddingTop="@dimen/margin_large">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/green_tile" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_large"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_settings_tile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_small"
+                android:paddingRight="@dimen/margin_small">
+
+                <ImageView
+                    android:id="@+id/iv_setting_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.softuvo.ipundit.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:text="@string/settings_text"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:paddingLeft="@dimen/margin_small">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_about_pundit_tile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_small">
+
+                    <ImageView
+                        android:id="@+id/iv_about_pundit_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.softuvo.ipundit.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:text="@string/about_pundit_text"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_large"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:paddingLeft="@dimen/margin_small">
+
+                <RelativeLayout
+                    android:id="@+id/rl_profile_tile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_small">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.softuvo.ipundit.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/profile_text"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:paddingLeft="@dimen/margin_small">
+
+                <RelativeLayout
+                    android:id="@+id/rv_fb_tile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_small">
+
+                    <ImageView
+                        android:id="@+id/iv_fb_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.softuvo.ipundit.views.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/app_logo_string"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
